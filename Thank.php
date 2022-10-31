@@ -5,7 +5,7 @@ $formcontent="From: $name \n Message: $message";
 $recipient = "sasn026@gmail.com";
 $mailheader = "From: $email \r\n";
 mail($recipient, $mailheader, $formcontent) or die("Error!");
-echo "
+header(
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,5 +32,8 @@ echo "
 
 
     </div>
-";
+<body>;
+)
+
+
 ?>
